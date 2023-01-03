@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import NotFound from './pages/not-found/NotFound';
+import NotFound from './pages/NotFound/NotFound';
 import Ticket from './pages/ticket/Ticket';
 
 function App() {

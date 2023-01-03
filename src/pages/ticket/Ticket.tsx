@@ -4,6 +4,7 @@ function Ticket() {
   return (
     <div className='ticket'>
       Ticket Page
+
     </div>
   );
 }
