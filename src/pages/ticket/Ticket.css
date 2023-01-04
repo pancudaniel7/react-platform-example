@@ -1,3 +1,21 @@
 .ticket {
-    color: "red";
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.title-page {
+  font-size: 70px;
+}
+
+.test {
+  background-color: aqua;
+}
+
+.test1 {
+  background-color: red;
+}
+
+.test2 {
+  background-color: blueviolet;
 }
