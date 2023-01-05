@@ -44,15 +44,17 @@ export const theme = createTheme({
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Ticket />} />
-          <Route path='/ticket' element={<Ticket />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </ThemeProvider>
+    <div className='background'>
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Ticket />} />
+            <Route path='/ticket' element={<Ticket />} />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
+    </div>
   );
 }
 
