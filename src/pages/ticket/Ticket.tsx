@@ -2,8 +2,7 @@ import './Ticket.css';
 
 function Ticket() {
   return (
-    <div>
-      
+    <div className='background'>
     </div>
   );
 }

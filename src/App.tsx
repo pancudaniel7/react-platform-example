@@ -44,7 +44,6 @@ export const theme = createTheme({
 
 function App() {
   return (
-    <div className='background'>
       <ThemeProvider theme={theme}>
         <BrowserRouter>
           <Routes>
@@ -54,7 +53,6 @@ function App() {
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
-    </div>
   );
 }
 

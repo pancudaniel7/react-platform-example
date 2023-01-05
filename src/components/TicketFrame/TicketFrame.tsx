@@ -1,15 +1,13 @@
+import { Grid } from '@mui/material';
 import './TicketFrame.css';
-import ticketImage from '../../assets/images/ticket.jpg';
 
 function TicketFrame() {
   return (
     <div className='ticket-frame'>
-      <img
-        height='160px'
-        width='380px'
-        src={ticketImage}
-        alt='Ticket image not found!'
-      />
+      <Grid container spacing={2}>
+        <Grid item xs={2}></Grid>
+        <Grid item xs={10}></Grid>
+      </Grid>
     </div>
   );
 }
