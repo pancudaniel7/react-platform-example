@@ -1,5 +1,15 @@
 .ticket-frame {
-  color: red;
+  color: white;
+}
+
+.ticket-upper-grid {
+  height: 550px;
+}
+
+@media only screen and (max-width: 450px) {
+  .ticket-upper-grid {
+    height: 520px;
+  }
 }
 
 img {
