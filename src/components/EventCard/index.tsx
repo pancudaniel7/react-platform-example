@@ -24,20 +24,23 @@ export default function EventCard({ from, to }: EventCardProps) {
           my: 2,
           mx: 2,
           paddingTop: 2,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
         }}
       >
-        <Typography gutterBottom variant="h4" component="div">
+        <Typography gutterBottom variant="h4" component="h1">
           {from} {to ? `- ${to}` : ""}
         </Typography>
-        <Typography gutterBottom variant="h6" component="div">
-          October
+        <Typography gutterBottom variant="h6" component="h1">
+          OCTOBER
         </Typography>
-
-        <Divider variant="middle" color="white" />
-
-        <Box sx={{ display: "flex", alignItems: "center", my: 2 }}>
-          <Typography variant="body1">Event Date</Typography>
-        </Box>
+      </Box>
+      <Divider variant="middle" color="white" />
+      <Box sx={{ display: "flex", justifyContent: "center", my: 2 }}>
+        <Typography variant="body1">
+          {to ? "Event Date" : "Event Start Date"}
+        </Typography>
       </Box>
     </Paper>
   );
