@@ -1,3 +1,49 @@
-.DateWidget {
-    
+.date-panel {
+  border: 1px solid rgba(252, 252, 252, 0.397);
+  border-radius: 15px;
+  width: 85px;
+  text-align: center;
+}
+
+.divider-line {
+  background-color: white;
+  width: 30px;
+  padding-right: 10px;
+}
+
+.divider-big-line {
+  width: 50px;
+}
+
+hr.divider-line {
+  margin: auto;
+}
+
+.date-upper-panel h1 {
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+}
+
+.date-panel h3 {
+  margin: 0px;
+  margin-bottom: 0px;
+}
+
+.low-opacity {
+  opacity: 50%;
+}
+
+.high-opacity {
+  opacity: 30%;
+}
+
+.date-upper-panel {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.date-bottom-panel {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

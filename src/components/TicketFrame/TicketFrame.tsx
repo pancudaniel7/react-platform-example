@@ -1,5 +1,6 @@
 import { Grid } from '@mui/material';
 import './TicketFrame.css';
+import DateWidget from '../DateWidget/DateWidget';
 
 function TicketFrame() {
   return (
@@ -8,7 +9,7 @@ function TicketFrame() {
         <Grid item xs={4}></Grid>
         <Grid item xs={8}></Grid>
         <Grid item xs={4}>
-          <p>Date</p>
+          <DateWidget from='05' to={undefined} />
         </Grid>
         <Grid item xs={8}>
           <p>Title</p>
