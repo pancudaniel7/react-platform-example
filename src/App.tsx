@@ -2,7 +2,7 @@ import { ThemeProvider, createTheme } from '@mui/material';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NotFound from './pages/NotFound/NotFound';
-import Ticket from './pages/ticket/Ticket';
+import Ticket from './pages/Ticket/Ticket';
 
 declare module '@mui/material/styles' {
   interface ThemeOptions {

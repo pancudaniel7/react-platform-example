@@ -14,7 +14,7 @@ export default function TicketFooter() {
           <h1> Title of the <span style={divStyle}>Description</span></h1>
         </Grid>
         <Grid item xs={7}>
-            
+          
         </Grid>
       </Grid>
     </div>
