@@ -1,10 +1,10 @@
-import { ThemeProvider, createTheme } from '@mui/material';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
-import NotFound from './pages/NotFound/NotFound';
-import Ticket from './pages/Ticket/Ticket';
+import { ThemeProvider, createTheme } from "@mui/material";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import NotFound from "./pages/NotFound/NotFound";
+import TicketPage from "./pages/ticket/TicketPage";
 
-declare module '@mui/material/styles' {
+declare module "@mui/material/styles" {
   interface ThemeOptions {
     status?: {
       danger?: string;
@@ -44,15 +44,15 @@ export const theme = createTheme({
 
 function App() {
   return (
-      <ThemeProvider theme={theme}>
-        <BrowserRouter>
-          <Routes>
-            <Route path='/' element={<Ticket />} />
-            <Route path='/ticket' element={<Ticket />} />
-            <Route path='*' element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </ThemeProvider>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<TicketPage />} />
+          <Route path="/ticket" element={<TicketPage />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
