@@ -4,6 +4,8 @@ import './DateWidget.css';
 interface DateWidgetProps {
   from: string;
   to?: string;
+  month: string;
+  year: string;
 }
 
 export default function DateWidget(props: DateWidgetProps) {
@@ -16,8 +18,8 @@ export default function DateWidget(props: DateWidgetProps) {
           className='divider-line divider-big-line opacity'
         />
         <div className='date-bottom-panel'>
-          <h3 className='date-text'>OCT</h3>
-          <h3 className='low-opacity'>2020</h3>
+          <h3 className='date-text'>{props.month}</h3>
+          <h3 className='low-opacity'>{props.year}</h3>
         </div>
       </div>
     </div>

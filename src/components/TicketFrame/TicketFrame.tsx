@@ -9,7 +9,7 @@ function TicketFrame() {
         <Grid item xs={4}></Grid>
         <Grid item xs={8}></Grid>
         <Grid item xs={4}>
-          <DateWidget from='05' to={undefined} />
+          <DateWidget from='05' to={undefined} month='OCT' year='2022'/>
         </Grid>
         <Grid item xs={8}>
           <p>Title</p>
