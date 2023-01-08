@@ -1,36 +1,10 @@
-import { ThemeProvider, createTheme } from '@mui/material';
+import { Theme, ThemeProvider, createTheme } from '@mui/material';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import NotFound from './pages/NotFound/NotFound';
 import Ticket from './pages/ticket/Ticket';
 
-declare module '@mui/material/styles' {
-  interface ThemeOptions {
-    status?: {
-      danger?: string;
-    };
-  }
-
-  interface PaletteOptions {
-    palette?: {
-      primary?: {
-        main?: string;
-        light?: string;
-        dark?: string;
-      };
-      secondary?: {
-        main?: string;
-        light?: string;
-        dark?: string;
-      };
-    };
-    shape?: {
-      borderRadius?: number
-    }
-  }
-}
-
-export const theme = createTheme({
+export const theme: Theme  = createTheme({
   palette: {
     primary: {
       main: '#1976d2',

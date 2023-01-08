@@ -1,1 +1,16 @@
-.buy-ticket {}
+.buy-ticket h1 {
+  margin: 0px;
+}
+
+.buy-ticket h3 {
+  margin-bottom: 10px;
+}
+
+.buy-ticket h1.main-title {
+  overflow-wrap: break-word;
+  max-width: 600px;
+}
+
+.buy-ticket button {
+  margin-top: 20px;
+}

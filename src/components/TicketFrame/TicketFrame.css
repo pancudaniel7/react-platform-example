@@ -12,6 +12,10 @@
   }
 }
 
+div.date-widget .date-panel {
+    float: right;
+}
+
 img {
   margin-left: auto;
   margin-right: 0px;

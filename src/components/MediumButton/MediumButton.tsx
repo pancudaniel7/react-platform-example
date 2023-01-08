@@ -1,12 +1,12 @@
 
 import { Button } from '@mui/material';
-import './MidButton.css';
+import './MediumButton.css';
 
-interface MidButton {
+interface MediumButton {
   buttonText: string
 }
 
-export default function MidButton(props: MidButton) {
+export default function MediumButton(props: MediumButton) {
   return (
     <div>
       <Button className='mid-button' variant="contained">{props.buttonText}</Button>
