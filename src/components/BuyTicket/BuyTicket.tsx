@@ -1,5 +1,5 @@
+import { Button } from '@mui/material';
 import { theme } from '../../App';
-import MediumButton from '../MediumButton/MediumButton';
 import './BuyTicket.css';
 
 interface BuyTicketProps {
@@ -13,7 +13,7 @@ export default function BuyTicket(props: BuyTicketProps) {
     <div className='buy-ticket'>
       <h3>{props.title}</h3>
       <MainTitle {...props} />
-      <MediumButton buttonText={props.buttonTitle} />
+      <Button variant='contained'>{props.buttonTitle}</Button>
     </div>
   );
 }
