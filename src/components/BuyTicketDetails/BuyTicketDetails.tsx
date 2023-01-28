@@ -1,6 +1,6 @@
 import { Button, Grid, Slider } from '@mui/material';
-import NumberInput from '../NumberInput/NumberInput';
 import './BuyTicketDetails.css';
+import CustomTextField from '../CustomTextField/CustomTextField';
 
 interface BuyTicketDetailsProps {
   ticketPrice: number;
@@ -26,17 +26,19 @@ export default function BuyTicketDetails(props: BuyTicketDetailsProps) {
           <h3>Donation amount (Optional)</h3>
         </Grid>
         <Grid item xs={7}>
-          <NumberInput
-            regex={/^[0-9]{0,4}$/}
-            errorMessage='Invalid!'
+          <CustomTextField
             width={110}
-            currency='RON'
+            regex={/^([0-9]{1,4})?$/}
+            label={'RON'}
+            errorMessage={'Invalid price!'}
+            onChange={function (value: string): void {
+              console.log(value);
+            }}
           />
         </Grid>
         <Grid item xs={5}>
           <div className='counter-slider'>
             <Slider
-              // getAriaValueText={valuetext}
               marks
               valueLabelDisplay='auto'
               defaultValue={1}
@@ -61,8 +63,3 @@ export default function BuyTicketDetails(props: BuyTicketDetailsProps) {
     </div>
   );
 }
-
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-// const SliderStyles = {
-//   ''
-// };

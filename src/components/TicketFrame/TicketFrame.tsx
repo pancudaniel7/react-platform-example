@@ -2,9 +2,8 @@ import { Grid } from '@mui/material';
 import DateWidget from '../DateWidget/DateWidget';
 import './TicketFrame.css';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import BuyTicketDetails from '../BuyTicketDetails/BuyTicketDetails';
+import CustomerTicketDetails from '../CustomerTicketDetails/CustomerTicketDetails';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import BuyTicket from '../BuyTicket/BuyTicket';
 
 export default function TicketFrame() {
   return (
@@ -21,7 +20,10 @@ export default function TicketFrame() {
             mainTitle='#1 Virtual Video Marketing Conference'
             buttonTitle='Buy Ticket'
           /> */}
-          <BuyTicketDetails ticketPrice={40} currency={'RON'} buttonTitle={'Next'} sliderWidth='250px'/>
+
+          {/* <BuyTicketDetails ticketPrice={40} currency={'RON'} buttonTitle={'Next'} sliderWidth='250px'/> */}
+
+          <CustomerTicketDetails width={200} buttonTitle={'Buy Ticket'} />
         </Grid>
       </Grid>
     </div>
